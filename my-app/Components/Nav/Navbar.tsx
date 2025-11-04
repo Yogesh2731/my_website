@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import Link from 'next/link'
 import { IoSunnyOutline, IoMoonOutline  } from "react-icons/io5";
 import { useTheme } from "next-themes";
+import YSLOGO1 from "@/public/Images/YSLOGO1.png"
+import YSLOGO2 from "@/public/Images/YSLOGO2.png"
+import Image from 'next/image'
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -15,8 +18,24 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full h-20 flex justify-between items-center pl-10! pr-10! z-50 text-(--color-text-primary) backdrop-blur-[6.85px]">
       {/* Brand / Logo */}
-      <div className="text-xl font-bold text-(--color-text-primary) tracking-wide">
+      {/* <div className="text-xl font-bold text-(--color-text-primary) tracking-wide">
         Yogesh Surwade
+      </div> */}
+      <div className="text-xl font-bold text-(--color-text-primary) tracking-wide h-full w-fit p-4!">
+        {theme === "light" ? 
+        <Image
+        src={YSLOGO2}
+        alt= "logo"
+        width={80}
+        height={80}
+        /> : 
+        <Image
+        src={YSLOGO1}
+        alt= "logo"
+        width={80}
+        height={80}
+        />}
+        
       </div>
 
       {/* Navigation Links */}
