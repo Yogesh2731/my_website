@@ -16,7 +16,7 @@ const Navbar = () => {
   if (!mounted) return null;
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-20 flex justify-between items-center pl-10! pr-10! z-50 text-(--color-text-primary) backdrop-blur-[6.85px]">
+    <nav className="fixed top-0 left-0 w-full h-20 flex justify-between items-center pl-10! pr-10! z-50 text-(--color-text-primary) backdrop-blur-xs">
       {/* Brand / Logo */}
       {/* <div className="text-xl font-bold text-(--color-text-primary) tracking-wide">
         Yogesh Surwade
