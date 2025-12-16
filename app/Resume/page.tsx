@@ -22,7 +22,7 @@ const Resume = () => {
             <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-(--color-accent) transition-all duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link
-            href="https://github.com/Yogesh2731"
+            href="https://www.linkedin.com/in/yogesh-surwade-623493387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="relative group text-(--color-accent) font-medium flex gap-1.5 justify-center items-center"
           >
             LinkedIn <FaLinkedin />

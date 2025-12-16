@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning style={{scrollBehavior:'smooth'}}>
+    <html lang="en" style={{scrollBehavior:'smooth'}} suppressHydrationWarning={true}>
       <body className={`${ibmPlexSans.variable} antialiased`}>
         <Providers>
           <Navbar />

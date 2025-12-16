@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -14,10 +15,12 @@ const Footer = () => {
         </div>
 
         <div className='self-stretch inline-flex justify-center items-center gap-10 pb-20'>
-          <button className='w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Linkedin</button>
-          <button className='w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Email</button>
-          <button className='w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Instagram</button>
-          <button className='w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Github</button>
+          <Link href="https://www.linkedin.com/in/yogesh-surwade-623493387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button className='cursor-pointer w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Linkedin</button></Link>
+          <Link href=""><button className='cursor-pointer w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Email</button></Link>
+          <Link href="https://www.instagram.com/yogeshh.s/"><button className='cursor-pointer w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Instagram</button></Link>
+          <Link href="https://github.com/Yogesh2731"><button className='cursor-pointer w-36 px-4 py-3.5 rounded-3xl outline -outline-offset-1 outline-(--color-text-primary) hover:outline-(--color-text-secondary) text-(--color-text-secondary) hover:text-(--color-text-primary) hover:font-semibold flex justify-center items-center gap-2.5'>Github</button></Link>
+          
+
         </div>
 
         <div className='bg-(--color-accent) w-full h-14 px-10 flex justify-end items-center text-neutral-100'>
