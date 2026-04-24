@@ -7,6 +7,8 @@ import "./globals.css";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-plex-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,11 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{scrollBehavior:'smooth'}} suppressHydrationWarning={true}>
-      <body className={`${ibmPlexSans.variable} antialiased`}>
+      <body className={`${ibmPlexSans.variable} antialiased overflow-x-hidden`} suppressHydrationWarning={true}>
         <Providers>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <div className="w-full overflow-x-hidden">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

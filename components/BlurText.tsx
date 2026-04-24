@@ -107,6 +107,7 @@ const BlurText: React.FC<BlurTextProps> = ({
             animate={inView ? animateKeyframes : fromSnapshot}
             transition={spanTransition}
             onAnimationComplete={index === elements.length - 1 ? onAnimationComplete : undefined}
+            suppressHydrationWarning={true}
             style={{
               display: 'inline-block',
               willChange: 'transform, filter, opacity'

@@ -81,13 +81,17 @@ export const projects = [
       title: "Desktop Assistant",
       description: "The Desktop Assistant is an innovative Python-based application designed to simplify and enhance user interaction with their desktop or laptop.This smart assistant enables seamless control through voice.",
       img: "/Images/ProjectOne.jpg",
-      alt: "Desktop Assistant Project Image"
+      alt: "Desktop Assistant Project Image",
+      githubUrl: "https://github.com/Yogesh2731/DesktopAssistant",
+      liveUrl: "",
     },
     {
-      title: "E-commerce Website",
-      description: "E-commerce Fashion Website built using Django, HTML, CSS, and JavaScript. It features product listing, category filtering, user authentication, cart management, and a smooth checkout flow.",
+      title: "Todo App",
+      description: "A full-stack Todo application with a Node.js/Express REST API backend and a JavaScript frontend. Features task creation, completion tracking, and persistent storage with a clean, intuitive UI.",
       img: "/Images/ProjectTwo.jpg",
-      alt: "E-commerce Project Image"
+      alt: "Todo App Project Image",
+      githubUrl: "https://github.com/Yogesh2731/TodoApp-frontend",
+      liveUrl: "",
     }
   ]
 
@@ -103,14 +107,14 @@ export const abouts = [
         id: 2,
         img: "/Images/AboutTwo.jpg",
         alt: "about2",
-        title: "About image 2",
+        title: "Culture & Curiosity ✨",
         desc: "Rooted in tradition, powered by technology - culture and code in sync."
     },
     {
         id: 3,
         img: "/Images/AboutThree.jpg",
         alt: "about3",
-        title: "About image 3",
-        desc: "this is about image"
+        title: "Standing Tall, Shipping Code 🚀",
+        desc: "The details matter. In design, in code, and in everything else."
     }
 ]

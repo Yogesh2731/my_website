@@ -1,17 +1,21 @@
-// import Resume from "./Resume"
-
 import Link from "next/link"
 import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 
+const sectionPadding = "px-4! sm:px-8! md:px-16! lg:px-24! max-w-[1200px] mx-auto my-0 w-full";
 
 const Resume = () => {
   return (
     <>
-      <section className="h-full max-w-[1200px] mx-auto my-0 pt-[120px]! px-24! sm:px-10! text-center">
-        <h1 className="text-8xl font-light tracking-tight mb-2">Resume</h1>
-        <p className="text-[32px] text-(--color-text-secondary) font-normal">Yogesh Surwade</p>
-        <p className="tracking-wider text-[16px] leading-7">
-          Room No: 02, Kranti Nagar, Kurla East Mumbai - 400078 <span className="text-(--color-accent) font-bold">|</span> +91 9545 006 102 <span className="text-(--color-accent) font-bold">|</span> surwadeyogesh1998@gmail.com
+      <section className={`h-full pt-[100px]! pb-6! text-center ${sectionPadding}`}>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-light tracking-tight mb-2">Resume</h1>
+        <p className="text-xl sm:text-2xl md:text-[32px] text-(--color-text-secondary) font-normal">Yogesh Surwade</p>
+        <p className="text-[14px] sm:text-[16px] text-(--color-accent) font-medium mb-1">Full-Stack Developer &nbsp;|&nbsp; Node.js · React.js · AWS · Docker · CI/CD</p>
+        <p className="tracking-wider text-[13px] sm:text-[15px] md:text-[16px] leading-7 flex flex-wrap gap-x-2 gap-y-1 justify-center items-center">
+          <span>Kranti Nagar, Kurla East, Mumbai - 400070</span>
+          <span className="hidden sm:inline text-(--color-accent) font-bold">|</span>
+          <span>+91 9545006102</span>
+          <span className="hidden sm:inline text-(--color-accent) font-bold">|</span>
+          <span>surwadeyogesh1998@gmail.com</span>
         </p>
         <p className="tracking-wider text-[16px] leading-7 flex gap-5 justify-center items-center">
           <Link
@@ -30,106 +34,151 @@ const Resume = () => {
           </Link>
         </p>
       </section>
-      <section className="py-12">
-        <div className="px-24! max-w-[1200px] mx-auto my-0 sm:px-10!">
-          <h2 className="text-[32px] font-normal text-(--color-text-primary) mb-12">Summary</h2>
-          <div className="text-[18px] leading-7 text-(--color-text-secondary)">
-          I am a <span className='text-(--color-accent-hover)! font-bold'>Full Stack Developer</span> with hands-on experience in building responsive, high-performing web applications using technologies like <span className='text-(--color-accent-hover)! font-bold'>Next.js, React.js, Node.js, Express.js, Django, Python, and MongoDB.</span> Over the past few years, I&apos;ve worked on multiple freelance and professional projects, From  ecommerce platforms to dynamic blog sites, Where I handled both frontend and backend development. Currently, I&apos;am working as a <span className='text-(--color-accent-hover)! font-bold'>Backend Developer</span> at <span className='text-(--color-accent-hover)! font-bold'>Radiant Techverse, </span>where I design and develop <span className='text-(--color-accent-hover)! font-bold'>REST APIs,</span>  plan <span className='text-(--color-accent-hover)! font-bold'> data flow architectures,</span> and collaborate on <span className='text-(--color-accent-hover)! font-bold'>end-to-end web solutions.</span> My experience has helped me strengthen my skills in JavaScript, DevOps, and API integration, while improving my <span className='text-(--color-accent-hover)! font-bold'>communication</span> and <span className='text-(--color-accent-hover)! font-bold'>client collaboration abilities.</span> I&apos;am passionate about writing clean, efficient code and crafting intuitive user experiences. I also enjoy experimenting with modern UI libraries like ShadCN and working with tools like Figma to bring designs to life.
+
+      <section className="py-8 md:py-12">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-12">Summary</h2>
+          <div className="text-[15px] md:text-[18px] leading-7 text-(--color-text-secondary)">
+            Results-driven <span className='text-(--color-accent-hover)! font-bold'>Full-Stack Developer</span> with <span className='text-(--color-accent-hover)! font-bold'>3+ years of experience</span> building scalable APIs and high-performance web applications using <span className='text-(--color-accent-hover)! font-bold'>Node.js, React.js,</span> and <span className='text-(--color-accent-hover)! font-bold'>Express.js.</span> Proficient in designing <span className='text-(--color-accent-hover)! font-bold'>RESTful APIs,</span> implementing <span className='text-(--color-accent-hover)! font-bold'>CI/CD pipelines,</span> and containerizing services with <span className='text-(--color-accent-hover)! font-bold'>Docker &amp; Kubernetes</span> on <span className='text-(--color-accent-hover)! font-bold'>AWS.</span> Committed to quality-first development — writing clean, readable, well-documented code and delivering seamless user experiences through responsive <span className='text-(--color-accent-hover)! font-bold'>React.js</span> frontends. Strong communicator with experience collaborating across development and design teams.
           </div>
         </div>
       </section>
-      <section className="py-12">
-        <div className="px-24! max-w-[1200px] mx-auto my-0 sm:px-10!">
-          <h2 className="text-[32px] font-normal text-(--color-text-primary) mb-12">Experience</h2>
+
+      <section className="py-8 md:py-12">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-12">Experience</h2>
           <div className="relative">
+
             {/* experience one */}
-            <div className="mb-8">
-              <div className="flex items-baseline gap-8 mb-4">
-                <div className="text-[16px] w-[180px] font-bold text-(--color-text-primary) uppercas tracking-[1px]">02/2024 - Present</div>
-                <div className="text-[16px] w-[200px] font-semibold text-(--color-text-primary)">Radiant Techverse</div>
-                <div className="text-[16px] w-[150px] text-(--color-text-primary)">Bhandup, Mumbai</div>
-                <div className="text-[16px] font-normal w-[150px] text-(--color-accent) flex-1 inline mb-0">Backend Developer</div>
+            <div className="mb-10">
+              <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-8 mb-2">
+                <div className="text-[14px] md:text-[16px] font-bold text-(--color-text-primary) tracking-[1px]">Feb 2024 – Present</div>
+                <div className="text-[15px] md:text-[16px] font-semibold text-(--color-text-primary)">Radiant-Techverse Pvt Ltd</div>
+                <div className="text-[14px] md:text-[16px] font-normal text-(--color-accent) md:flex-1">Backend Developer</div>
               </div>
-              <p className="text-[16px] leading-7 text-(--color-text-secondary) mt-4">
-                I&apos;m currently working on a scalable HRMS platform where I build and maintain backend systems using Node.js, Express, and MongoDB. I&apos;ve developed key modules like attendance, leave, payroll, and onboarding, along with complex business logic such as payroll lock periods and role-based access. I also automate advanced Excel reports with ExcelJS and manage containerized microservices using Docker, Kubernetes, and AWS. Alongside development, I help maintain smooth CI/CD workflows and structured logging to keep deployments reliable.
-              </p>
+              <ul className="list-disc list-inside text-[14px] md:text-[16px] leading-7 text-(--color-text-secondary) mt-3 space-y-1">
+                <li><span className="font-semibold text-(--color-text-primary)">Scalable API Design:</span> Built RESTful APIs for attendance, leave, payroll, and onboarding modules using Node.js and Express.js.</li>
+                <li>Implemented payroll lock periods and dynamic role-based access control for complex business logic.</li>
+                <li><span className="font-semibold text-(--color-text-primary)">MongoDB:</span> Designed schemas with Mongoose for effective handling of deeply nested data structures.</li>
+                <li><span className="font-semibold text-(--color-text-primary)">DevOps / CI-CD:</span> Containerized services with Docker, orchestrated deployments via Kubernetes, and managed AWS resources.</li>
+                <li>Automated shift-wise and payroll-specific report generation using ExcelJS.</li>
+              </ul>
             </div>
 
             {/* experience two */}
-            <div className="mb-8">
-              <div className="flex items-baseline gap-8 mb-4">
-                <div className="text-[16px] w-[180px] font-bold text-(--color-text-primary) uppercas tracking-[1px]">03/2023 - 10/2023</div>
-                <div className="text-[16px] w-[200px] font-semibold text-(--color-text-primary)">Freelancing Project (Har ghar Chandan)</div>
-                <div className="text-[16px] w-[150px] text-(--color-text-primary)">Kurla, Mumbai</div>
-                <div className="text-[16px] font-normal w-[150px] text-(--color-accent) flex-1 inline mb-0">Frontend Developer</div>
+            <div className="mb-10">
+              <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-8 mb-2">
+                <div className="text-[14px] md:text-[16px] font-bold text-(--color-text-primary) tracking-[1px]">Mar 2024 – Oct 2024</div>
+                <div className="text-[15px] md:text-[16px] font-semibold text-(--color-text-primary)">Har Ghar Chandan</div>
+                <div className="text-[14px] md:text-[16px] font-normal text-(--color-accent) md:flex-1">Freelance Full-Stack Developer</div>
               </div>
-              <p className="text-[16px] leading-7 text-(--color-text-secondary) mt-4">
-                I built a fully responsive frontend for an e-commerce application using React JS, applying hooks, components, events, and modern CSS layouts to deliver a smooth cross-device experience. I developed key features like animations, JWT-based authentication, multilingual support with react-i18next, and dynamic product listings powered by React Hooks and Context API. I collaborated closely with the client to refine requirements and ensured the final UI matched their expectations. I also optimized performance through lazy loading and efficient state management to keep the app fast and seamless.
-              </p>
+              <ul className="list-disc list-inside text-[14px] md:text-[16px] leading-7 text-(--color-text-secondary) mt-3 space-y-1">
+                <li><span className="font-semibold text-(--color-text-primary)">React.js Frontend:</span> Developed a fully responsive e-commerce frontend with animations, component-based architecture, and clean UI from design specs.</li>
+                <li>Implemented OAuth and JWT for secure authentication and user session management.</li>
+                <li>Achieved cross-device compatibility using responsive design and CSS media queries.</li>
+                <li>Added multilingual support with react-i18next for improved accessibility.</li>
+              </ul>
             </div>
 
             {/* experience three */}
-            <div className="mb-8">
-              <div className="flex items-baseline gap-8 mb-4">
-                <div className="text-[16px] w-[180px] font-bold text-(--color-text-primary) uppercas tracking-[1px]">11/2022 - 01/2023</div>
-                <div className="text-[16px] w-[200px] font-semibold text-(--color-text-primary)">Freelancing Project (Ideal Signs Web Application)</div>
-                <div className="text-[16px] w-[150px] text-(--color-text-primary)">Kurla, Mumbai</div>
-                <div className="text-[16px] font-normal w-[150px] text-(--color-accent) flex-1 inline mb-0">Fullstack Developer</div>
+            <div className="mb-10">
+              <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-8 mb-2">
+                <div className="text-[14px] md:text-[16px] font-bold text-(--color-text-primary) tracking-[1px]">Nov 2023 – Feb 2024</div>
+                <div className="text-[15px] md:text-[16px] font-semibold text-(--color-text-primary)">Ideal Signs</div>
+                <div className="text-[14px] md:text-[16px] font-normal text-(--color-accent) md:flex-1">Full-Stack Developer</div>
               </div>
-              <p className="text-[16px] leading-7 text-(--color-text-secondary) mt-4">
-                I developed a responsive and dynamic frontend using React JS, utilizing hooks, events, components, and props to create an intuitive user interface. On the backend, I built a robust Django application with multiple RESTful APIs powered by Django REST Framework for smooth communication between services. I integrated MongoDB with well-structured schemas and indexing to ensure fast and scalable data handling. Together, the React frontend and Django backend were seamlessly connected through REST APIs, effective state management, and asynchronous communication for a smooth full-stack experience.
-              </p>
+              <ul className="list-disc list-inside text-[14px] md:text-[16px] leading-7 text-(--color-text-secondary) mt-3 space-y-1">
+                <li><span className="font-semibold text-(--color-text-primary)">React.js + Django:</span> Designed and implemented a responsive frontend using React.js and built backend APIs with Python/Django.</li>
+                <li>Developed a web application to streamline buying and selling of manufacturing products.</li>
+                <li>Ensured smooth functionality, performance, and cross-device compatibility across all web applications.</li>
+              </ul>
             </div>
 
             {/* experience four */}
-            <div className="mb-8">
-              <div className="flex items-baseline gap-8 mb-4">
-                <div className="text-[16px] w-[180px] font-bold text-(--color-text-primary) uppercas tracking-[1px]">11/2022 - 05/2023</div>
-                <div className="text-[16px] w-[200px] font-semibold text-(--color-text-primary)">Threed Verse Software Solution Pvt Ltd (Internship)</div>
-                <div className="text-[16px] w-[150px] text-(--color-text-primary)">Kurla, Mumbai</div>
-                <div className="text-[16px] font-normal w-[150px] text-(--color-accent) flex-1 inline mb-0">Backend Developer</div>
+            <div className="mb-10">
+              <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-8 mb-2">
+                <div className="text-[14px] md:text-[16px] font-bold text-(--color-text-primary) tracking-[1px]">Nov 2022 – May 2023</div>
+                <div className="text-[15px] md:text-[16px] font-semibold text-(--color-text-primary)">Threed Verse Software Solution Pvt Ltd</div>
+                <div className="text-[14px] md:text-[16px] font-normal text-(--color-accent) md:flex-1">Web & App Developer (Intern)</div>
               </div>
-              <p className="text-[16px] leading-7 text-(--color-text-secondary) mt-4">
-                I completed three end-to-end projects centered around API integration, strengthening my backend development skills using Python, Django, DRF, and MongoDB. These projects gave me hands-on experience in designing data models, integrating third-party APIs, and building secure, scalable backend systems. I also learned to adapt quickly to different tools and frameworks while delivering reliable solutions in real-world development environments.
-              </p>
+              <ul className="list-disc list-inside text-[14px] md:text-[16px] leading-7 text-(--color-text-secondary) mt-3 space-y-1">
+                <li>Achieved seamless third-party API integration across three end-to-end projects.</li>
+                <li>Developed scalable web solutions using Python, Django, and MongoDB.</li>
+                <li>Adapted quickly to various tools and frameworks in fast-paced, dynamic environments.</li>
+              </ul>
             </div>
 
           </div>
         </div>
       </section>
-      <section className="py-12">
-        <div className="px-24! max-w-[1200px] mx-auto my-0 sm:px-10!">
-          <h2 className="text-[32px] font-normal text-(--color-text-primary) mb-12">Skills</h2>
-          <div className="grid grid-cols-3 gap-8">
-            {/* Skill 1 */}
+
+      <section className="py-8 md:py-12">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-12">Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-8">
             <div>
-              <h3 className="text-[16px] font-normal text-(--color-text-primary) mb-6">Creative</h3>
-              <div className="text-[16px] leading-7 text-(--color-text-secondary)">
-                Concepting / Logo & Identity / Typography / Illustration / Audio Editing 
+              <h3 className="text-[16px] font-semibold text-(--color-text-primary) mb-3">Frontend</h3>
+              <div className="flex flex-wrap gap-2">
+                {["React.js", "Next.js", "JavaScript", "HTML", "CSS"].map(s => (
+                  <span key={s} className="px-3 py-1 text-[13px] md:text-[14px] border border-(--color-accent) text-(--color-accent) rounded-full">{s}</span>
+                ))}
               </div>
             </div>
-
-            {/* Skill 2 */}
             <div>
-              <h3 className="text-[16px] font-normal text-(--color-text-primary) mb-6">Development</h3>
-              <div className="text-[16px] leading-7 text-(--color-text-secondary)">
-                <span className="text-(--color-accent) font-semibold mt-0 block">Expert:</span>
-                HTML / CSS / JavaScript / Tailwind / Reac.Js / Node JS / MongoDB<br></br>
-                <span className="text-(--color-accent) font-semibold mt-0 block">Intermediate:</span>
-                Next.Js / Python / Django / SQL / Git / GitHub<br></br>
-                <span className="text-(--color-accent) font-semibold mt-0 block">Beginner:</span>
-                AWS / Kubernetes / CI/CD / Java<br></br>
+              <h3 className="text-[16px] font-semibold text-(--color-text-primary) mb-3">Backend</h3>
+              <div className="flex flex-wrap gap-2">
+                {["Node.js", "Express.js", "REST APIs", "Python", "Django", "Golang"].map(s => (
+                  <span key={s} className="px-3 py-1 text-[13px] md:text-[14px] border border-(--color-accent) text-(--color-accent) rounded-full">{s}</span>
+                ))}
               </div>
             </div>
-
-            {/* Skill 3 */}
             <div>
-              <h3 className="text-[16px] font-normal text-(--color-text-primary) mb-6">Management</h3>
-              <div className="text-[16px] leading-7 text-(--color-text-secondary)">
-                Team Building / Leadership / Problem Solving / Communication / Adaptability / Time Management / Presentation
+              <h3 className="text-[16px] font-semibold text-(--color-text-primary) mb-3">Database</h3>
+              <div className="flex flex-wrap gap-2">
+                {["MongoDB", "PostgreSQL", "SQL"].map(s => (
+                  <span key={s} className="px-3 py-1 text-[13px] md:text-[14px] border border-(--color-accent) text-(--color-accent) rounded-full">{s}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-[16px] font-semibold text-(--color-text-primary) mb-3">DevOps & Tools</h3>
+              <div className="flex flex-wrap gap-2">
+                {["AWS", "Docker", "Kubernetes", "CI/CD", "Git/GitHub"].map(s => (
+                  <span key={s} className="px-3 py-1 text-[13px] md:text-[14px] border border-(--color-accent) text-(--color-accent) rounded-full">{s}</span>
+                ))}
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-8 md:py-12">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-8">Education</h2>
+          <div className="space-y-3 text-[14px] md:text-[16px] leading-7">
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">BTech in Computer Science</span><span className="text-(--color-text-secondary)">— Mumbai University | 2023</span></div>
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">Diploma in Computer Science</span><span className="text-(--color-text-secondary)">— MSBTE | 2018</span></div>
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">HSC</span><span className="text-(--color-text-secondary)">— Maharashtra State Board | 2016</span></div>
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">SSC</span><span className="text-(--color-text-secondary)">— Maharashtra State Board | 2014</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 md:py-12">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-8">Certifications</h2>
+          <div className="space-y-3 text-[14px] md:text-[16px] leading-7">
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">Web Development Course</span><span className="text-(--color-text-secondary)">— Udemy | 2022</span></div>
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">Python Programming Course</span><span className="text-(--color-text-secondary)">— Bolt IOT | 2022</span></div>
+            <div className="flex flex-col sm:flex-row sm:gap-4"><span className="font-semibold text-(--color-text-primary)">App Script Course</span><span className="text-(--color-text-secondary)">— Udemy | 2023</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 pb-24">
+        <div className={sectionPadding}>
+          <h2 className="text-2xl md:text-[32px] font-normal text-(--color-text-primary) mb-6 md:mb-8">Languages</h2>
+          <p className="text-[14px] md:text-[16px] text-(--color-text-secondary)">English &nbsp;•&nbsp; Marathi &nbsp;•&nbsp; Hindi</p>
         </div>
       </section>
     </>
