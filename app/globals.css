@@ -93,3 +93,38 @@ a:hover {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
+
+@keyframes loading {
+  0%   { width: 0%; }
+  100% { width: 100%; }
+}
+
+/* Hide default cursor on desktop for custom cursor */
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
+
+/* Dot grid background pattern */
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-border) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+
+/* Scroll reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth theme transition — inside @layer base so Tailwind utilities override it */
+@layer base {
+  *, *::before, *::after {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, outline-color 0.3s ease;
+  }
+}

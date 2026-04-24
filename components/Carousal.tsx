@@ -24,7 +24,7 @@ const Carousal = () => {
                   className="w-full h-full object-cover rounded-2xl"
                 />
 
-                <div className='w-full px-10! py-2! h-64 left-0 top-[334px] group-hover:top-[272px] absolute bg-neutral-900/40 backdrop-blur-lg inline-flex flex-col justify-start items-start gap-2.5 transition-all duration-300'>
+                <div className='w-full px-10! py-2! h-64 left-0 top-[334px] group-hover:top-[272px] absolute bg-neutral-900/40 backdrop-blur-lg inline-flex flex-col justify-start items-start gap-2.5' style={{ transition: 'top 0.5s ease-in-out' }}>
                   <div className='text-neutral-200 text-xl font-semibold'>{about.title}</div>
                   <div className="hidden group-hover:block text-neutral-300 text-base font-normal">
                     {about.desc}

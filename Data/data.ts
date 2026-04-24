@@ -76,6 +76,47 @@ export const skills = [
     },
 ]
 
+export const skillProficiencies = [
+  { name: "JavaScript / TypeScript", level: 85, category: "Frontend" },
+  { name: "React.js / Next.js", level: 90, category: "Frontend" },
+  { name: "HTML & CSS / Tailwind", level: 92, category: "Frontend" },
+  { name: "Node.js / Express.js", level: 82, category: "Backend" },
+  { name: "Python / Django", level: 78, category: "Backend" },
+  { name: "MongoDB / MySQL", level: 75, category: "Database" },
+  { name: "AWS / Kubernetes", level: 65, category: "DevOps" },
+  { name: "Git & CI/CD", level: 80, category: "DevOps" },
+]
+
+export const experience = [
+  {
+    id: 1,
+    role: "Backend Developer",
+    company: "Radiant Techverse",
+    duration: "2023 – Present",
+    location: "Mumbai, India",
+    description: "Designing and developing REST APIs, planning data flow architectures, and collaborating on end-to-end web solutions for enterprise clients.",
+    tags: ["Node.js", "Express.js", "MongoDB", "REST APIs", "AWS"],
+  },
+  {
+    id: 2,
+    role: "Freelance Web Developer",
+    company: "Self-Employed",
+    duration: "2022 – 2023",
+    location: "Remote",
+    description: "Delivered 5+ client projects including e-commerce platforms and dynamic websites. Handled full-stack development from design to deployment.",
+    tags: ["React.js", "Next.js", "Django", "Python", "MySQL"],
+  },
+  {
+    id: 3,
+    role: "Web Development Intern",
+    company: "Academic & Personal Projects",
+    duration: "2021 – 2022",
+    location: "Mumbai, India",
+    description: "Built desktop tools and web apps including a voice-controlled Desktop Assistant in Python. First hands-on experience with full-stack development.",
+    tags: ["Python", "JavaScript", "HTML/CSS", "Git"],
+  },
+]
+
 export const projects = [
     {
       title: "Desktop Assistant",
@@ -94,6 +135,30 @@ export const projects = [
       liveUrl: "",
     }
   ]
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Rahul Desai",
+    role: "Senior Developer",
+    company: "Radiant Techverse",
+    quote: "Yogesh consistently delivers clean, well-structured backend code. His REST API designs are scalable and his understanding of data flow architecture is impressive for someone at his experience level.",
+  },
+  {
+    id: 2,
+    name: "Sneha Kulkarni",
+    role: "Project Manager",
+    company: "Radiant Techverse",
+    quote: "Working with Yogesh on our HRMS platform was a great experience. He's proactive, communicates clearly, and always delivers complex features on time. A genuine team player.",
+  },
+  {
+    id: 3,
+    name: "Amit Patil",
+    role: "Client",
+    company: "Har Ghar Chandan",
+    quote: "Yogesh built our e-commerce frontend exactly as we envisioned it. He understood our requirements quickly and the final product was beyond our expectations. Highly recommend him.",
+  },
+]
 
 export const abouts = [
     {

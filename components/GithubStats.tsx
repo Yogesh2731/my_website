@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const username = "Yogesh2731";
 
@@ -10,6 +11,7 @@ const GithubStats = () => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+  const ref = useScrollReveal<HTMLDivElement>();
 
   const isDark = mounted && theme === "dark";
 
@@ -26,7 +28,7 @@ const GithubStats = () => {
 
   return (
     <section className="bg-(--color-bg) pt-0! pb-20! w-full">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-24">
+      <div ref={ref} className="reveal max-w-[1200px] mx-auto px-4 sm:px-8 lg:px-24">
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
@@ -46,23 +48,18 @@ const GithubStats = () => {
         </div>
 
         {/* Stats Cards */}
-        <div className="flex flex-col lg:flex-row gap-5 w-full">
-          <div className="w-full lg:flex-1">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={statsUrl}
-              alt="GitHub Stats"
-              className="w-full rounded-xl"
-            />
-          </div>
-          <div className="w-full lg:w-[340px]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={langsUrl}
-              alt="Top Languages"
-              className="w-full rounded-xl"
-            />
-          </div>
+        {/* <div className="w-full lg:flex-1">
+          <img src={statsUrl} alt="GitHub Stats" className="w-full rounded-xl" />
+        </div> */}
+
+        {/* Top Languages */}
+        <div className="w-full sm:w-[400px]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={langsUrl}
+            alt="Top Languages"
+            className="w-full rounded-xl"
+          />
         </div>
 
         {/* Contribution Graph */}
