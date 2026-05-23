@@ -1,6 +1,5 @@
 "use client";
 import { skills, skillProficiencies } from "@/Data/data";
-import Image from 'next/image'
 import { useScrollReveal } from "@/lib/useScrollReveal";
 import { useEffect, useRef, useState } from "react";
 
@@ -60,22 +59,20 @@ const Skills = () => {
         <div className="w-full overflow-hidden py-3">
           <div className="flex whitespace-nowrap animate-[scroll_20s_linear_infinite]">
             {skills.map((skill) => (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 key={skill.id}
                 src={skill.icon}
                 alt={skill.skillName}
-                width={96}
-                height={96}
                 className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transition-all mx-4 sm:mx-6 lg:mx-8 inline-block object-contain"
               />
             ))}
             {skills.map((skill) => (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 key={`${skill.id}-duplicate`}
                 src={skill.icon}
                 alt={skill.skillName}
-                width={96}
-                height={96}
                 className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 transition-all mx-4 sm:mx-6 lg:mx-8 inline-block object-contain"
               />
             ))}

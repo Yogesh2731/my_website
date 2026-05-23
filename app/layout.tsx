@@ -15,6 +15,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yogeshsurwade.dev"),
   title: "Yogesh Surwade | Full Stack Developer",
   description: "Full Stack Developer specializing in Next.js, React, Node.js, Django, and cloud infrastructure. Building fast, scalable web applications.",
   keywords: ["Full Stack Developer", "Next.js", "React", "Node.js", "Django", "MongoDB", "AWS", "Yogesh Surwade"],

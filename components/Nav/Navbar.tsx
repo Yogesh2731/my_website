@@ -17,7 +17,7 @@ const NAV_LINKS = [
 ];
 
 const Navbar = () => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted]         = useState(false);
   const [menuOpen, setMenuOpen]       = useState(false);
   const [activeSection, setActive]    = useState('hero');
@@ -58,10 +58,11 @@ const Navbar = () => {
       {/* Logo */}
       <div className="font-bold tracking-wide pt-1">
         <Image
-          src={!mounted ? YSLOGO1 : theme === "light" ? YSLOGO2 : YSLOGO1}
+          src={!mounted ? YSLOGO1 : resolvedTheme === "light" ? YSLOGO2 : YSLOGO1}
           alt="logo"
           width={70}
           height={70}
+          style={{ height: "auto" }}
         />
       </div>
 
@@ -77,22 +78,22 @@ const Navbar = () => {
           ))}
         </ul>
         <button
-          onClick={() => mounted && setTheme(theme === "light" ? "dark" : "light")}
+          onClick={() => mounted && setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="text-xl hover:text-(--color-accent)"
           aria-label="Toggle Theme"
         >
-          {!mounted ? null : theme === "light" ? <IoMoonOutline /> : <IoSunnyOutline />}
+          {!mounted ? null : resolvedTheme === "dark" ? <IoSunnyOutline /> : <IoMoonOutline />}
         </button>
       </div>
 
       {/* Mobile Buttons */}
       <div className="md:hidden flex items-center gap-4">
         <button
-          onClick={() => mounted && setTheme(theme === "light" ? "dark" : "light")}
+          onClick={() => mounted && setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="text-xl"
           aria-label="Toggle Theme"
         >
-          {!mounted ? null : theme === "light" ? <IoMoonOutline /> : <IoSunnyOutline />}
+          {!mounted ? null : resolvedTheme === "dark" ? <IoSunnyOutline /> : <IoMoonOutline />}
         </button>
         <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl" aria-label="Toggle Menu">
           {menuOpen ? <IoClose /> : <IoMenu />}
