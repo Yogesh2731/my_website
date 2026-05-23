@@ -58,6 +58,7 @@ const GithubStats = () => {
           <img
             src={langsUrl}
             alt="Top Languages"
+            loading="lazy"
             className="w-full rounded-xl"
           />
         </div>
@@ -68,6 +69,7 @@ const GithubStats = () => {
           <img
             src={`https://ghchart.rshah.org/${isDark ? "ea580c" : "000068"}/${username}`}
             alt="GitHub Contribution Graph"
+            loading="lazy"
             className={`w-full ${isDark ? "invert-[0.15]" : ""}`}
           />
         </div>

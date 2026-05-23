@@ -121,7 +121,7 @@ export const projects = [
     {
       title: "Desktop Assistant",
       description: "The Desktop Assistant is an innovative Python-based application designed to simplify and enhance user interaction with their desktop or laptop.This smart assistant enables seamless control through voice.",
-      img: "/Images/ProjectOne.jpg",
+      img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=520&h=317&fit=crop&auto=format",
       alt: "Desktop Assistant Project Image",
       githubUrl: "https://github.com/Yogesh2731/DesktopAssistant",
       liveUrl: "",
@@ -129,11 +129,27 @@ export const projects = [
     {
       title: "Todo App",
       description: "A full-stack Todo application with a Node.js/Express REST API backend and a JavaScript frontend. Features task creation, completion tracking, and persistent storage with a clean, intuitive UI.",
-      img: "/Images/ProjectTwo.jpg",
+      img: "https://images.unsplash.com/photo-1651129522359-ce483a8263a7?w=520&h=317&fit=crop&auto=format",
       alt: "Todo App Project Image",
       githubUrl: "https://github.com/Yogesh2731/TodoApp-frontend",
       liveUrl: "",
-    }
+    },
+    {
+      title: "Todo App — REST API",
+      description: "A RESTful backend API for the Todo application built with Node.js and Express.js. Features structured MVC architecture with dedicated controllers, models, and routes — designed to pair with the React frontend.",
+      img: "https://images.unsplash.com/photo-1639066648921-82d4500abf1a?w=520&h=317&fit=crop&auto=format",
+      alt: "Todo App Backend API",
+      githubUrl: "https://github.com/Yogesh2731/TodoApp-backend",
+      liveUrl: "",
+    },
+    {
+      title: "Price List App",
+      description: "A full-stack web application built for practice, replicating the UI/UX of a real-world Swedish invoicing and accounting platform. The goal was to sharpen skills in building production-grade apps with a modern React frontend, a secure Node.js backend, and a relational PostgreSQL database — all deployed on a cloud platform.",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=520&h=317&fit=crop&auto=format",
+      alt: "Price List App Image",
+      githubUrl: "https://github.com/Yogesh2731/price_list",
+      liveUrl: "",
+    }   
   ]
 
 export const testimonials = [
