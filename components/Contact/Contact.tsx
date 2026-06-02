@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="flex flex-col gap-1">
             <h3 className="text-(--color-text-primary) text-xl font-semibold">Get in Touch</h3>
             <p className="text-(--color-text-secondary) text-sm leading-relaxed">
-              I&apos;m currently open to full-time roles, freelance projects, and interesting collaborations. Feel free to reach out!
+              I&apos;m currently open to freelance projects, and interesting collaborations. Feel free to reach out!
             </p>
           </div>
 
@@ -74,7 +74,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-3 text-(--color-text-secondary) text-sm">
               <FaMapMarkerAlt className="text-(--color-accent) text-lg shrink-0" />
-              <span>Pune, Maharashtra, India</span>
+              <span>Mumbai, Maharashtra, India</span>
             </div>
           </div>
 

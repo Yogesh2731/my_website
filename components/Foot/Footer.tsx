@@ -84,7 +84,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h4 className="text-(--color-text-primary) text-sm font-semibold uppercase tracking-widest">Get In Touch</h4>
           <div className="flex flex-col gap-2 text-(--color-text-secondary) text-sm">
-            <span>Pune, Maharashtra, India</span>
+            <span>Mumbai, Maharashtra, India</span>
             <Link
               href="mailto:surwadeyogesh1998@gmail.com"
               className="hover:text-(--color-accent)! transition-colors duration-200 no-underline! text-(--color-text-secondary)"

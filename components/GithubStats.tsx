@@ -55,12 +55,12 @@ const GithubStats = () => {
         {/* Top Languages */}
         <div className="w-full sm:w-[400px]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          {/* <img
             src={langsUrl}
             alt="Top Languages"
             loading="lazy"
             className="w-full rounded-xl"
-          />
+          /> */}
         </div>
 
         {/* Contribution Graph */}

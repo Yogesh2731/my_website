@@ -157,14 +157,14 @@ export const testimonials = [
     id: 1,
     name: "Rahul Desai",
     role: "Senior Developer",
-    company: "Radiant Techverse",
+    company: "TCS",
     quote: "Yogesh consistently delivers clean, well-structured backend code. His REST API designs are scalable and his understanding of data flow architecture is impressive for someone at his experience level.",
   },
   {
     id: 2,
     name: "Sneha Kulkarni",
     role: "Project Manager",
-    company: "Radiant Techverse",
+    company: "TCS",
     quote: "Working with Yogesh on our HRMS platform was a great experience. He's proactive, communicates clearly, and always delivers complex features on time. A genuine team player.",
   },
   {
@@ -178,14 +178,14 @@ export const testimonials = [
     id: 4,
     name: "Rahul Desai",
     role: "Senior Developer",
-    company: "Radiant Techverse",
+    company: "TCS",
     quote: "Yogesh consistently delivers clean, well-structured backend code. His REST API designs are scalable and his understanding of data flow architecture is impressive for someone at his experience level.",
   },
   {
     id: 5,
     name: "Sneha Kulkarni",
     role: "Project Manager",
-    company: "Radiant Techverse",
+    company: "TCS",
     quote: "Working with Yogesh on our HRMS platform was a great experience. He's proactive, communicates clearly, and always delivers complex features on time. A genuine team player.",
   },
   {
