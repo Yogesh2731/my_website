@@ -108,6 +108,11 @@ a:hover {
   100% { transform: translateX(-50%); }
 }
 
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.93); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 /* Hide default cursor on desktop for custom cursor */
 @media (pointer: fine) {
   * { cursor: none !important; }
